@@ -1,0 +1,17 @@
+name: Say Hello
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  hello:
+    name: Hello
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say hello to me
+        uses: anshu3769/test-github-actions@v1
+        with:
+          who-to-greet: "Anshu"
