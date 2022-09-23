@@ -35,7 +35,7 @@ jobs:
         run: |
           make build-release
 
-      - uses: LouisBrunner/checks-action@v1.1.1
+      - uses: LouisBrunner/checks-action@v1.3.1
         with:
           name: Check Build Success
           conclusion: ${{ steps.build.outcome }}
