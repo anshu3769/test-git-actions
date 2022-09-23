@@ -7,6 +7,7 @@ authors = ["Anshu Tomar <atomar@gmail.com>"]
 [[tool.poetry.source]]
 name = "keplegrp"
 url = "https://pypi.keplergrp.com/simple/"
+secondary = true
 
 [tool.poetry.dependencies]
 python = "^3.8"
