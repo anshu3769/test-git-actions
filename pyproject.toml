@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "test-git-actions"
+version = "0.1.0"
+description = ""
+authors = ["Anshu Tomar <atomar@gmail.com>"]
+
+[[tool.poetry.source]]
+name = "keplegrp"
+url = "https://pypi.keplergrp.com/simple/"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+hvault = "^0.1.0"
+boto3 = "^1.14.9"
+pyyaml = "^5.3.1"
+jinja2 = "^3.0.3"
+func-timeout = "^4.3.5"
+google-ads = "^18.0.0"
+markupsafe = "2.0.1"
+
+[tool.poetry.dev-dependencies]
+tox = "^3.15.2"
+mypy = "^0.782"
+pytest = "^5.4.3"
+isort = "4.3.21"
+black = "19.10b0"
+bandit = "^1.7.0"
+
+[tool.black]
+line-length = 79
+
+[tool.isort]
+line_length = 79
+indent = '    '
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+force_sort_within_sections = true
+
+
+[build-system]
+requires = ["poetry>=1.1"]
+build-backend = "poetry.masonry.api"
