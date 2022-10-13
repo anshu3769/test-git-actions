@@ -15,7 +15,7 @@ markupsafe = "2.1.1"
 
 [tool.poetry.dev-dependencies]
 tox = "^3.15.2"
-mypy = "^0.782"
+mypy = "^0.982"
 pytest = "^5.4.3"
 isort = "4.3.21"
 black = "19.10b0"
