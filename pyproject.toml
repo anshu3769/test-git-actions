@@ -4,14 +4,8 @@ version = "0.1.0"
 description = ""
 authors = ["Anshu Tomar <atomar@gmail.com>"]
 
-[[tool.poetry.source]]
-name = "keplegrp"
-url = "https://pypi.keplergrp.com/simple/"
-secondary = true
-
 [tool.poetry.dependencies]
 python = "^3.8"
-hvault = "^0.1.0"
 boto3 = "^1.14.9"
 pyyaml = "^5.3.1"
 jinja2 = "^3.0.3"
