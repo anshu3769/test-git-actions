@@ -16,7 +16,7 @@ markupsafe = "2.1.1"
 [tool.poetry.dev-dependencies]
 tox = "^3.15.2"
 mypy = "^0.982"
-pytest = "^5.4.3"
+pytest = "^7.0.0"
 isort = "5.10.1"
 black = "22.10.0"
 bandit = "^1.7.0"
