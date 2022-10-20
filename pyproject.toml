@@ -11,14 +11,14 @@ pyyaml = "^5.3.1"
 jinja2 = "^3.0.3"
 func-timeout = "^4.3.5"
 google-ads = "^18.0.0"
-markupsafe = "2.0.1"
+markupsafe = "2.1.1"
 
 [tool.poetry.dev-dependencies]
 tox = "^3.15.2"
-mypy = "^0.782"
-pytest = "^5.4.3"
-isort = "4.3.21"
-black = "19.10b0"
+mypy = "^0.982"
+pytest = "^7.0.0"
+isort = "5.10.1"
+black = "22.10.0"
 bandit = "^1.7.0"
 
 [tool.black]
