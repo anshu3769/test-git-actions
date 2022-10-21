@@ -28,8 +28,7 @@ jobs:
     name: Build and Test image
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v2
-      - name: Fail action
+        uses: actions/checkout@v1
         run: exit 1
 
       # - name: Build Image
