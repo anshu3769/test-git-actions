@@ -29,6 +29,7 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v1
+      - name: Fail
         run: exit 1
 
       # - name: Build Image
