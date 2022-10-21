@@ -24,7 +24,7 @@ on:
 
 jobs:
   build_and_test:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     name: Build and Test image
     steps:
       - name: Checkout Code
