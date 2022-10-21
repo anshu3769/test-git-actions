@@ -38,7 +38,7 @@ jobs:
         run: |
           make build-test
 
-      - uses: LouisBrunner/checks-action@v1.2.1
+      - uses: LouisBrunner/checks-action@v1.3.1
         with:
           name: Check Build Success
           conclusion: ${{ steps.build.outcome }}
@@ -47,7 +47,7 @@ jobs:
         run: |
           make run-test
 
-      - uses: LouisBrunner/checks-action@v1.2.1
+      - uses: LouisBrunner/checks-action@v1.3.1
         with:
           name: Check Test Success
           conclusion: ${{ steps.build.outcome }}
