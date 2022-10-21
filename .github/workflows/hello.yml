@@ -7,7 +7,7 @@ on:
     types: [opened, reopened]
   push:
     branches:
-      - master
+      - [master, main]
   # workflow_dispatch:
   #   inputs:
   #     git_branch:
