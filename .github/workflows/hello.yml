@@ -30,16 +30,27 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v1
-      - name: Fail
-        run: exit 1
+      # - name: Fail
+      #   run: exit 1
 
-      # - name: Build Image
-      #   id: build
-      #   run: |
-      #     make build-release
+      - name: Build Test Image
+        id: build
+        run: |
+          make build-test
 
-      # - uses: LouisBrunner/checks-action@v1.3.1
-      #   with:
-      #     name: Check Build Success
-      #     conclusion: ${{ steps.build.outcome }}
+      - uses: LouisBrunner/checks-action@v1.2.1
+        with:
+          name: Check Build Success
+          conclusion: ${{ steps.build.outcome }}
+
+      - name: Run Test Image
+        run: |
+          make run-test
+
+      - uses: LouisBrunner/checks-action@v1.2.1
+        with:
+          name: Check Test Success
+          conclusion: ${{ steps.build.outcome }}
+
+
 

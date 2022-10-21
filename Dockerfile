@@ -1,4 +1,4 @@
-FROM python:3.10.8-slim-buster as base
+FROM python:3.8-slim-buster as base
 
 RUN pip install pip==22.2.2
 RUN pip install poetry==1.1.13
@@ -16,5 +16,16 @@ RUN poetry install -n -vvv --no-dev
 COPY --chown=kip:kip main.py .
 COPY --chown=kip:kip entrypoint.sh .
 
+
+###############################################################################
+# Test
+###############################################################################
+FROM base as test
+ENTRYPOINT ["poetry", "run", "tox"]
+
+
+###############################################################################
+# Release
+###############################################################################
 FROM base as release
 ENTRYPOINT ["poetry", "run", "python", "main.py"]
