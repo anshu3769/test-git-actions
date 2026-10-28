@@ -1,4 +1,4 @@
-FROM python:3.8-slim-buster as base
+FROM python:3.11-slim-buster as base
 
 RUN pip install pip==22.2.2
 RUN pip install poetry==1.1.13
